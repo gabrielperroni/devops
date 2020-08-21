@@ -20,7 +20,7 @@ spec:
   storageClassName: longhorn
   resources:
     requests:
-      storage: 5Gi
+      storage: 1Gi
 
 
 ---
@@ -35,7 +35,7 @@ spec:
   storageClassName: longhorn
   resources:
     requests:
-      storage: 5Gi
+      storage: 1Gi
 
 
 ---
@@ -50,7 +50,7 @@ spec:
   storageClassName: longhorn
   resources:
     requests:
-      storage: 5Gi
+      storage: 1Gi
 
 
 
@@ -262,7 +262,7 @@ spec:
       containers:
       - env:
         - name: GRAYLOG_WEB_ENDPOINT_URI
-          value: http://graylog.rancher.<dominio>/api
+          value: http://graylog.rancher.gpdevops.cloud/api
         - name: GRAYLOG_ELASTICSEARCH_HOSTS
           value: "http://elasticsearch.graylog.svc.cluster.local:9200"
         - name: ELASTICSEARCH_DISCOVERY_ZEN_PING_MULTICAST_ENABLED
@@ -338,7 +338,7 @@ metadata:
     allow.http: "false"
 spec:
   rules:
-  - host: graylog.rancher.<dominio>
+  - host: graylog.rancher.gpdevops.cloud
     http:
       paths:
         - path: /

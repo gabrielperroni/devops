@@ -4,8 +4,8 @@ kind: ConfigMap
 metadata:
   name: special-config
 data:
-  SPECIAL_LEVEL: very
-  SPECIAL_TYPE: charm
+  SPECIAL_LEVEL: very-GP
+  SPECIAL_TYPE: charm-GP
 
 
 
